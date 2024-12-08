@@ -16,20 +16,24 @@ jobs:
 
       - name: Install dependencies
         run: |
+          echo "Updating package list..."
           sudo apt-get update
+          echo "Installing dependencies..."
           sudo apt-get install -y python3-pip python3-dev
           python3 -m pip install --upgrade pip
-          pip install -r requirements.txt  # Jeśli masz jakiś dodatkowy plik requirements.txt, inaczej pomiń to
+          echo "Dependencies installed."
 
-      - name: Download GitHub Contributions Snake
+      - name: Install github-contribution-grid-snake from GitHub
         run: |
-          curl -L https://github.com/salesp07/github-contribution-grid-snake/releases/download/v1.0.0/github-contribution-grid-snake-linux-x86_64.tar.gz -o github-contribution-grid-snake.tar.gz
-          tar -xzf github-contribution-grid-snake.tar.gz
-          chmod +x github-contribution-grid-snake
-          
+          echo "Installing github-contribution-grid-snake..."
+          pip install git+https://github.com/salesp07/github-contribution-grid-snake.git
+          echo "github-contribution-grid-snake installed successfully."
+
       - name: Generate Snake SVG
         run: |
-          ./github-contribution-grid-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
+          echo "Generating Snake SVG..."
+          github-contribution-grid-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
+          echo "SVG generated successfully."
 
       - name: Upload Snake SVG
         uses: actions/upload-artifact@v3
