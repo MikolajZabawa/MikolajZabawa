@@ -9,11 +9,10 @@
 <br/>
 
 <div align="center">
- 
- 🔭 Obecnie rozwijam swoje umiejętności w dziedzinie cybersecurity oraz automatyzacji.<br/>
- 🌱 Kieruję swoją uwagę na naukę hackingu etycznego, zaawansowanego zarządzania systemami Linux oraz projektowania mechaniki gier.<br/>
- 💬 Chętnie podzielę się wiedzą na temat Pythona, Linuxa, Unity oraz wielu innych tematów, więc nie wahaj się zadać pytanie!<br/>
- ⚡ Ciekawostka: Podczas mojego stażu Erasmus+ w Hiszpanii miałem okazję współpracować przy tworzeniu gry 2D inspirowanej Timbermanem!<br/>
+ 🔭 Currently, I am enhancing my skills in cybersecurity and automation.<br/>
+ 🌱 I’m learning ethical hacking, advanced Linux administration, and game mechanics design.<br/>
+ 💬 Feel free to ask me about Python, Linux, Unity, or anything related to programming and tech!<br/>
+ ⚡ Fun fact: I once contributed to a 2D game inspired by Timberman during my Erasmus+ internship in Spain!<br/>
 </div>
 
 <div align="center"> 
@@ -27,7 +26,7 @@
 
 <hr/>
 
-<h2 align="center">⚒️ Languages-Frameworks-Tools ⚒️</h2>
+<h2 align="center">⚒️ Languages, Frameworks & Tools ⚒️</h2>
 <br/>
 <div align="center">
     <img src="https://skillicons.dev/icons?i=python,linux,bash,html,css,php,js,c,cs,git,figma,vscode" />
@@ -61,3 +60,11 @@
 <br/><br/>
 
 <hr/>
+
+<br/>
+
+<div align="center">
+<a href='https://ko-fi.com/V7V4RAK9C' target='_blank'><img height='64' style='border:0px;height:64px;' src='https://storage.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+</div>
+
+<br/>
