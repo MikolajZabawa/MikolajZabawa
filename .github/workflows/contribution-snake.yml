@@ -2,11 +2,10 @@ name: GitHub Contributions Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Codziennie o północy
+    - cron: "0 0 * * *"  
   push:
     branches:
-      - main  # Upewnij się, że to jest główna gałąź w Twoim repozytorium
-
+      - main  
 jobs:
   build:
     runs-on: ubuntu-latest
