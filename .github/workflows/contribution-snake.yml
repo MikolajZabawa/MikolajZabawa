@@ -6,6 +6,7 @@ on:
   push:
     branches:
       - main  
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,10 +26,4 @@ jobs:
 
       - name: Generate Snake SVG
         run: |
-          github-contributions-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
-
-      - name: Upload Snake SVG
-        uses: actions/upload-artifact@v3
-        with:
-          name: github-contribution-grid-snake
-          path: ./output/github-contribution-grid-snake.svg
+          github-contributions-snake -u MikolajZabawa -o ./output/github-contribu
