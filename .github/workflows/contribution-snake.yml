@@ -1,42 +1,43 @@
-name: GitHub Contributions Snake
+name: Generate Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"  # Codziennie o północy
+    - cron: "0 */12 * * *"  # Uruchamiane co 12 godzin
+
+  workflow_dispatch:  # Ręczne uruchomienie workflow
+
   push:
     branches:
-      - main  # Upewnij się, że to jest główna gałąź w Twoim repozytorium
+      - main  # Upewnij się, że główną gałęzią jest 'main'
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Używamy Ubuntu do wykonania tej akcji
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Clone repo
+        uses: actions/checkout@v3  # Klonujemy repozytorium
 
-      - name: Install dependencies
-        run: |
-          echo "Updating package list..."
-          sudo apt-get update
-          echo "Installing dependencies..."
-          sudo apt-get install -y python3-pip python3-dev
-          python3 -m pip install --upgrade pip
-          echo "Dependencies installed."
-
-      - name: Install github-contribution-grid-snake from GitHub
-        run: |
-          echo "Installing github-contribution-grid-snake..."
-          pip install git+https://github.com/salesp07/github-contribution-grid-snake.git
-          echo "github-contribution-grid-snake installed successfully."
-
-      - name: Generate Snake SVG
-        run: |
-          echo "Generating Snake SVG..."
-          github-contribution-grid-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
-          echo "SVG generated successfully."
-
-      - name: Upload Snake SVG
-        uses: actions/upload-artifact@v3
+      - name: Generate the snake files in './dist/'
+        uses: Platane/snk@v3  # Używamy oficjalnej akcji Platane/snk
+        id: snake-gif
         with:
-          name: github-contribution-grid-snake
-          path: ./output/github-contribution-grid-snake.svg
+          github_user_name: ${{ github.repository_owner }}  # Pobieramy nazwę użytkownika repozytorium (Twoje konto)
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            dist/github-contribution-grid-snake.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
+        env:
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Używamy tokena GITHUB_TOKEN, który pozwala na interakcję z API
+
+      - name: Show build status
+        run: git status  # Wyświetlamy status repozytorium
+
+      - name: Push new files to the output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0  # Używamy akcji do publikowania wyników na stronie
+        with:
+          target_branch: output  # Wysyłamy zmiany na gałąź output
+          build_dir: dist  # Ścieżka do wygenerowanych plików
+          commit_message: Update snake animations  # Wiadomość commit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Ponownie używamy tokena GITHUB_TOKEN
