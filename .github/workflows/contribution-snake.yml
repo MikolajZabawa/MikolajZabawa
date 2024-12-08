@@ -22,11 +22,11 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install github-contributions-snake
+          pip install git+https://github.com/salesp07/github-contribution-grid-snake.git
 
       - name: Generate Snake SVG
         run: |
-          github-contributions-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
+          github-contribution-grid-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
 
       - name: Upload Snake SVG
         uses: actions/upload-artifact@v3
