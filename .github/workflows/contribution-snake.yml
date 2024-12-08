@@ -2,10 +2,10 @@ name: GitHub Contributions Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"  
+    - cron: "0 0 * * *"  # Codziennie o północy
   push:
     branches:
-      - main  
+      - main  # Upewnij się, że to jest główna gałąź w Twoim repozytorium
 
 jobs:
   build:
@@ -26,4 +26,10 @@ jobs:
 
       - name: Generate Snake SVG
         run: |
-          github-contributions-snake -u MikolajZabawa -o ./output/github-contribu
+          github-contributions-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
+
+      - name: Upload Snake SVG
+        uses: actions/upload-artifact@v3
+        with:
+          name: github-contribution-grid-snake
+          path: ./output/github-contribution-grid-snake.svg
