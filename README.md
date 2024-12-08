@@ -9,20 +9,19 @@
 <br/>
 
 <div align="center">
-    🔭 I’m currently working on expanding my skills in **cybersecurity** and **automation**.<br/>
-    🌱 I’m learning **ethical hacking**, **advanced Linux administration**, and **game mechanics design**.<br/>
-    💬 Ask me about **Python**, **Linux**, **Unity**, or anything here!<br/>
-    ⚡ Fun fact: **I once contributed to a 2D game inspired by Timberman during my Erasmus+ internship in Spain!**
+ 
+ 🔭 Obecnie rozwijam swoje umiejętności w dziedzinie cybersecurity oraz automatyzacji.<br/>
+ 🌱 Kieruję swoją uwagę na naukę hackingu etycznego, zaawansowanego zarządzania systemami Linux oraz projektowania mechaniki gier.<br/>
+ 💬 Chętnie podzielę się wiedzą na temat Pythona, Linuxa, Unity oraz wielu innych tematów, więc nie wahaj się zadać pytanie!<br/>
+ ⚡ Ciekawostka: Podczas mojego stażu Erasmus+ w Hiszpanii miałem okazję współpracować przy tworzeniu gry 2D inspirowanej Timbermanem!<br/>
 </div>
 
-<br/>
-
-<div align="center">
+<div align="center"> 
   <a href="mailto:mikolaj.zabawa321@gmail.com">
     <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
   </a>
   <a href="https://www.linkedin.com/in/mikołaj-zabawa-031137236/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
   </a>
 </div>
 
@@ -33,6 +32,9 @@
 <div align="center">
     <img src="https://skillicons.dev/icons?i=python,linux,bash,html,css,php,js,c,cs,git,figma,vscode" />
     <img src="https://skillicons.dev/icons?i=unity,qgis,photoshop,illustrator,autodesk" />
+    <br>
+    <img src="https://skillicons.dev/icons?i=debian,archlinux,windows" />
+    <img src="https://skillicons.dev/icons?i=bitcoin,ethereum,stockcharts" />
 </div>
 
 <br/>
@@ -41,7 +43,8 @@
 <div align="center">
   <h2>🐍 My Contributions 🐍</h2>
   <br>
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/MikolajZabawa/MikolajZabawa/main/github-contribution-grid-snake.gif" />
+  <img alt="snake eating my contributions" src="https://github.com/MikolajZabawa/MikolajZabawa/raw/output/github-contribution-grid-snake.svg" />
+  <br/><br/><br/>
 </div>
 
 <hr/>
@@ -56,5 +59,5 @@
 </div>
 
 <br/><br/>
+
 <hr/>
-<br/>
