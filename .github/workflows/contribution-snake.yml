@@ -5,23 +5,31 @@ on:
     - cron: "0 0 * * *"  # Codziennie o północy
   push:
     branches:
-      - main  # Upewnij się, że używasz odpowiedniej gałęzi (jeśli Twoja główna gałąź nazywa się np. "master", zmień to na "master")
+      - main  # Upewnij się, że to jest główna gałąź w Twoim repozytorium
 
 jobs:
-  generate-snake:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Generate contribution snake
-        uses: Platane/snk@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
         with:
-          github_user: MikolajZabawa  # Zmień na swoje GitHub username
-          output: ./github-contribution-grid-snake.svg
-          
-      - name: Upload generated snake
-        uses: actions/upload-artifact@v2
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install github-contributions-snake
+
+      - name: Generate Snake SVG
+        run: |
+          github-contributions-snake -u MikolajZabawa -o ./output/github-contribution-grid-snake.svg
+
+      - name: Upload Snake SVG
+        uses: actions/upload-artifact@v3
         with:
           name: github-contribution-grid-snake
-          path: ./github-contribution-grid-snake.svg
+          path: ./output/github-contribution-grid-snake.svg
