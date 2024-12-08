@@ -10,8 +10,11 @@
 
 <div align="center">
  🔭 Currently, I am enhancing my skills in cybersecurity and automation.<br/>
+ 
  🌱 I’m learning ethical hacking, advanced Linux administration, and game mechanics design.<br/>
+ 
  💬 Feel free to ask me about Python, Linux, Unity, or anything related to programming and tech!<br/>
+ 
  ⚡ Fun fact: I once contributed to a 2D game inspired by Timberman during my Erasmus+ internship in Spain!<br/>
 </div>
 
@@ -45,6 +48,7 @@
   <img alt="snake eating my contributions" src="https://github.com/MikolajZabawa/MikolajZabawa/raw/output/github-contribution-grid-snake.svg" />
   <br/><br/><br/>
 </div>
+
 
 <hr/>
 
