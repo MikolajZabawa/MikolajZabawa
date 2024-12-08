@@ -9,7 +9,7 @@
 <br/>
 
 <div align="center">
- 🔭 Currently, I am enhancing my skills in cybersecurity and automation.<br/>
+ 🔭 Currently, I am enhancing my skills in cybersecurity and automation.<br/></br>
  
  🌱 I’m learning ethical hacking, advanced Linux administration, and game mechanics design.<br/>
  
