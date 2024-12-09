@@ -83,13 +83,6 @@ I’ve always believed in hands-on learning—whether it’s setting up a secure
   <img alt="snake eating my contributions" src="https://github.com/MikolajZabawa/MikolajZabawa/raw/output/github-contribution-grid-snake.svg" />
   
   <br/><br/><br/>
-</div>
-
-<h2 align="center">🖤 Matrix Rain Animations 🖤</h2>
-<br/>
-<div align="center">
-    <img alt="Matrix Rain" src="https://raw.githubusercontent.com/MikolajZabawa/MikolajZabawa/main/assets/matrix-rain.gif" />
-</div>
 
 
 <hr/>
